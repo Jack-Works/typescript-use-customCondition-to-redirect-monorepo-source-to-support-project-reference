@@ -1,0 +1,11 @@
+{
+    "name": "@test-c/lib",
+    "type": "module",
+    "exports": {
+        ".": {
+            "my-source": "./src/index.ts",
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js"
+        }
+    }
+}

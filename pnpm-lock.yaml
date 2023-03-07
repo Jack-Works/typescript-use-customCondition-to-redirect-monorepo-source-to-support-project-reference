@@ -1,0 +1,41 @@
+lockfileVersion: '6.0'
+
+importers:
+
+  .:
+    dependencies:
+      typescript:
+        specifier: 5.1.0-dev.20230306
+        version: 5.1.0-dev.20230306
+
+  example-1-no-reference/app:
+    dependencies:
+      '@test-a/lib':
+        specifier: '*'
+        version: link:../lib
+
+  example-1-no-reference/lib: {}
+
+  example-2-path/app:
+    dependencies:
+      '@test-b/lib':
+        specifier: '*'
+        version: link:../lib
+
+  example-2-path/lib: {}
+
+  example-3-conditions/app:
+    dependencies:
+      '@test-c/lib':
+        specifier: '*'
+        version: link:../lib
+
+  example-3-conditions/lib: {}
+
+packages:
+
+  /typescript@5.1.0-dev.20230306:
+    resolution: {integrity: sha512-CqMT7nhnVNKfaT1giN+UjFUSqN2gBI17K8JoT+I1LgPU/G9oYypuG+91pz8Kjk/GW/BG685khZ0YfFrADj+KPQ==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: false

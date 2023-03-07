@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "composite": true,
+        "strict": true,
+        "moduleResolution": "nodenext",
+        "module": "NodeNext",
+        "target": "ESNext",
+        // This is easy to maintain because all those conditions are written with their package.json
+        "customConditions": ["my-source"]
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "composite": true,
+        "strict": true,
+        "moduleResolution": "nodenext",
+        "module": "NodeNext",
+        "target": "ESNext",
+        "paths": {
+            // Oh no, this part is hard to maintain and easily gets desync with the real situation.
+            // You have to correctly map all package entries to the "exports" field they used.
+            "@test-b/lib": ["./lib/src/index.ts"],
+            "@test-b/app": ["./app/src/index.ts"]
+        }
+    }
+}

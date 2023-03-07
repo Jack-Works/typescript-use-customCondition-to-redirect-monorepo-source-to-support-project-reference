@@ -1,0 +1,7 @@
+{
+    "name": "@test-a/app",
+    "type": "module",
+    "dependencies": {
+        "@test-a/lib": "*"
+    }
+}
